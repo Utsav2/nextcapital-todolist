@@ -26,9 +26,9 @@ function todo($scope){
 
 		Todo.createUser({
 
-			email: $('#email').val(),
+			email: $scope.email,
 
-			password: $('#password').val(),
+			password: $scope.password,
 
 			success: function(myuser){$scope.user = myuser; $scope.$apply()},
 
